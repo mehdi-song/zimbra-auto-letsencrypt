@@ -2,7 +2,7 @@
 
 # use default config file if nothing is declared
 config_file="letsencrypt-zimbra.conf"
-
+current_dir=$(pwd)
 # source the variables file
 source  "$config_file"
 
