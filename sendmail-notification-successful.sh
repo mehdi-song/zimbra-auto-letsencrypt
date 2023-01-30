@@ -15,18 +15,11 @@ USAGE="USAGE
     This simple script will send the email to the specified
     e-mail address via '$sendmail' program."
 
-[ $# -ne 1 ] && {
+if [ $# -ne 1 ]; then
     echo "$USAGE" >&2
     exit 1
-}
-
-[ $# -eq 1 ] && {
-    if [ "$1" == "-h" -o "$1" == "--help" -o "$1" == "help" ]; then
-        echo "$USAGE" >&2
-        exit 1
-    else
-        echo "Subject: $subject
+else
+echo "Subject: $subject
         $message" | "$sendmail" "$email"
-    fi
-}
+fi
 
