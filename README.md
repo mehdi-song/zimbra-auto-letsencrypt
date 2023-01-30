@@ -10,12 +10,12 @@ You will probably find these files useful when you want to move your self-signed
  - run `./zimbra-auto-letsencrypt.sh --help` for help and for a copy-paste-friendly hint to automate renewals using crontab
  - Enjoy **open-source** and **encryption**!
 
-NOTE: Tested on Zimbra 8.7 and CentOS 7 host (will not work for Zimbra < 8.7 since zmcertmgr is running as zimbra user, on CentOS 6 you will need to install an alternate python version to run Certbot, it works but require little extra prep).
+NOTE: Tested on Zimbra 8.8 and Ubuntu 18 host (will not work for Zimbra < 8.7 since zmcertmgr is running as zimbra user, on CentOS 6 you will need to install an alternate python version to run Certbot, it works but require little extra prep).
 
 ## Requirements:
   - git
   - Let's Encrypt Certbot client
-  - Zimbra 8.7
+  - Zimbra 8.8
   
 ## Tips:
   - install prerequisites on CentOS 7:
